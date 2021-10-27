@@ -5,8 +5,9 @@ $PSHELL_ARGS= "-Command"
 $CC         = "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe"
 # 実行形式
 $TARGET     = "winexe"
-# ソースファイル
-$SRC_FILES  = ".\src\Program.cs"
+# ソースファイル（必ず配列で指定）
+$SRC_FILES = @('.\src\Program.cs',
+               '.\src\Window.cs')
 # ライブラリ（DLL）
 $DLL_FILES  = ""
 # 実行ファイル
